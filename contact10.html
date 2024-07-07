@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- Khadijah Gay
+     contact.html
+     06/30/2024
+-->
+<html lang="en">
+<head>
+<title>Contact Me</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="index10.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="container">
+<header id="fcc-logo" class="phome">
+	<h1>Khadijah Gay</h1>
+	<figure>
+		<figcaption>
+			<h4>Offering Website Design and Development Services</h4>
+		</figcaption>
+		<img src="khadijahgay.png" alt="A Photo of Khadijah Gay">
+	</figure>
+</header>
+<!-- Mobile Nav -->
+<nav class="mobile">
+	<!-- Top Navigation Menu -->
+<div class="mobile-nav">
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+	<a href="index10.html">Home</a>
+	<a href="about10.html">About</a>
+    <a href="contact10.html">Contact</a>
+    <a href="services10.html">Services</a>
+	<a href="portfolio10.html">Portfolio</a>
+	<a href="faq10.html">FAQ</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+</nav>
+<nav class="tablet-desktop">
+	<ul class="phome">
+		<li><a href="index10.html">Home</a></li>
+		<li><a href="about10.html">About</a></li>
+		<li><a href="contact10.html">Contact</a></li>
+		<li><a href="services10.html">Services</a></li>
+		<li><a href="portfolio10.html">Portfolio</a></li>
+		<li><a href="faq10.html">FAQ</a></li>
+	</ul>
+</nav>
+<!--
+<!--
+the main element is where all of the main content of the website goes.
+-->
+<main class="phome">
+	<div id="form" class="mobile">
+	<p>Press play to hear some background music!</p>
+<audio controls autoplay>
+	<source src="song.mp3" type="audio/mpeg">
+	<p>Your browser does not support the audio element.</p>
+</audio>
+		<h2>
+			Please complete the form to contact me.
+		</h2>
+		<form method="POST" action="formInfo.php">
+		<!--start form -->
+			<fieldset>
+				<legend>Your information</legend>
+				<label for="fName">First Name:</label>
+				<input type="text" name="fName" id="fName" required><br>
+				<label for="lName">Last Name (optional):</label>
+				<input type="text" name="lName" id="lName"><br>
+				<label for="email">Please make sure your email address is valid. Email:</label>
+				<input type="email" name="email" id="email" required><br>
+				<label for="phone">Phone (optional):</label>
+				<input type="tel" id="phone" name="phone"><br>
+				<label for="questions">Enter your comment or question:</label>
+				<textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+			</fieldset>
+			<fieldset>
+				<legend>Additional Information</legend>
+				<p>Would you like to text about your order instead of email? Please note the initial response time is the same-2-3 business days:</p>
+				<input type="checkbox" name="interest" id="yes" value="Yes">
+				<label for="yes">Yes, please text me when you receive this.</label><br>
+				<input type="checkbox" name="interest" id="no" value="No">
+				<label for="no">No, I am fine with communicating via email.</label>
+			</fieldset>
+			<input type="submit" id="submit" value ="Submit" class="btn">
+		</form>
+	</div>
+	<div id="form" class="tablet-desktop">
+	<p>Press play to hear some background music!</p>
+<audio controls autoplay>
+	<source src="song.mp3" type="audio/mpeg">
+	<p>Your browser does not support the audio element.</p>
+</audio>
+		<h2>
+			Please complete the form to contact me.
+		</h2>
+		<form method="POST" action="formInfo.php">
+		<!--start form -->
+			<fieldset>
+				<legend>Your information</legend>
+				<label for="fName">First Name:</label>
+				<input type="text" name="fName" id="fName" required><br>
+				<label for="lName">Last Name (optional):</label>
+				<input type="text" name="lName" id="lName"><br>
+				<label for="email">Please make sure your email address is valid. Email:</label>
+				<input type="email" name="email" id="email" required><br>
+				<label for="phone">Phone (optional):</label>
+				<input type="tel" id="phone" name="phone"><br>
+				<label for="questions">Enter your comment or question:</label>
+				<textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+			</fieldset>
+			<fieldset>
+				<legend>Additional Information</legend>
+				<p>Would you like to text about your order instead of email? Please note the initial response time is the same-2-3 business days:</p>
+				<input type="checkbox" name="interest" id="yes" value="Yes">
+				<label for="yes">Yes, please text me when you receive this.</label><br>
+				<input type="checkbox" name="interest" id="no" value="No">
+				<label for="no">No, I am fine with communicating via email.</label>
+			</fieldset>
+			<input type="submit" id="submit" value ="Submit" class="btn">
+		</form>
+	</div>
+</main>
+<footer>
+<p>&copy; Copyright 2024</p>
+<p><a href="mailto:kgay1752@students.gwinnetttech.edu">kgay1752@students.gwinnetttech.edu</a></p>
+</footer>
+</div>
+<script src="script.js">
+</script>
+</body>
+</html>

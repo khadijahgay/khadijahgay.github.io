@@ -1,0 +1,212 @@
+/*
+Khadijah Gay
+06/30/2024
+index.css 
+*/
+
+/*
+this rule is to reset the values of the webpage if there are any display discrepencies
+*/
+body, header, nav, main, footer, img, li, figure, figcaption, table {
+	
+		margin: 0;
+		padding: 0;
+		border: 0;
+	
+}
+
+/*
+this rule is for the header
+*/
+header {
+		float: left;
+		width: 50%;
+		background-color: pink;
+}
+
+/*
+this rule is for the nav menu
+*/
+nav {
+	float: right;
+	width: 45%;
+	font-size: 15px;
+	background-color: green;
+	color: white;
+}
+
+/*
+this rule is for the links in the nav menu
+*/
+nav a {
+	text-decoration: none;
+	color: white;	
+	
+}
+
+/*
+this rule is for the main section of the site
+*/
+main {
+	color: white;
+	clear:left;
+	font-size: 30px;	
+}
+
+
+/*this rule is for the table headers and data*/
+th, td {
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+/*
+this rule is an ID for the body of the site 
+*/
+#container {
+	
+width: 50%;
+margin: 0 auto;
+background-color: black;
+text-align: center;
+}
+
+/*
+this rule is for the footer of the site
+*/
+footer {
+	
+	font-size: 10px;
+	text-align: left;
+	padding: 10px 10px 10px 10px;
+	background-color: green;
+	color: white;
+}
+
+/*
+this rule is for the links in the footer
+*/
+footer a {
+	text-decoration: none;
+	color: white;
+}
+
+/*
+this rule is for the nav links/list items only
+*/
+nav li {
+  display: inline;
+  border-radius: 5px;
+  background-color: black;
+}
+
+/*
+this rule is to make the images responsive
+*/
+img {
+		max-width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	
+}
+
+/*
+this rule is to set the font of the text on the site
+*/
+.phome {
+	font-family: "Lucida Handwriting", "Arial", "Times New Roman";
+	text-shadow: 5px 10px 8px #ccc;
+}
+/* this rule is for mobile viewports */
+@media screen and (max-width: 600px) {
+/*show mobile, hide tablet/desktop */
+.mobile {
+		display: block;
+	
+}
+
+
+.tablet-desktop {
+		display:none;
+
+}
+.mobile-nav {
+  overflow: hidden;
+  background-color: black;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+#myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.mobile-nav a {
+  color: pink;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.mobile-nav a.icon {
+  background: white;
+  display: block;
+  position: relative;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.mobile-nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+}
+
+nav {
+	
+	padding: 1%;
+	margin-bottom: 1%;
+	
+}
+
+/* media query for tablets */
+@media screen and (min-width: 600px) {
+	
+	/* show tablet/desktop, hide mobile */
+.tablet-desktop {
+		display:block;
+
+}
+.mobile {
+		display: none;
+	
+}
+	
+}
+/* media query for desktop */
+
+@media screen and (min-width: 768px) {
+	
+	.mobile {
+		display: none;
+	
+}
+	
+	nav li a:hover {
+		color: #000;
+		background-color: pink;
+		
+	}	
+}
