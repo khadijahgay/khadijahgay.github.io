@@ -1,1 +1,0 @@
-# khadijahgay.github.io
